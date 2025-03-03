@@ -36,15 +36,17 @@ public class Grades2DArray {
             percentage[i] = (marks[i][0] + marks[i][1] + marks[i][2]) / 3.0;
             
             // Assign grade
-            if (percentage[i] >= 90) {
+            if (percentage[i] >= 80) {
                 grade[i] = "A";
-            } else if (percentage[i] >= 80) {
-                grade[i] = "B";
             } else if (percentage[i] >= 70) {
-                grade[i] = "C";
+                grade[i] = "B";
             } else if (percentage[i] >= 60) {
+                grade[i] = "C";
+            } else if (percentage[i] >= 50) {
                 grade[i] = "D";
-            } else {
+            } else if (percentage[i] >= 40) {
+		grade[i] = "E";
+	    } else {
                 grade[i] = "F";
             }
         }
